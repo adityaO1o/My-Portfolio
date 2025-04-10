@@ -1,0 +1,239 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 0%; /* Black */
+    --foreground: 0 0% 100%; /* White */
+
+    --card: 0 0% 15%; /* Dark Gray */
+    --card-foreground: 0 0% 100%; /* White */
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%; /* White */
+    --primary-foreground: 0 0% 0%; /* Black */
+
+    --secondary: 0 0% 15%; /* Dark Gray */
+    --secondary-foreground: 0 0% 100%; /* White */
+
+    --muted: 0 0% 25%;
+    --muted-foreground: 0 0% 80%;
+
+    --accent: 210 90% 60%; /* Blue */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 210 90% 60%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: black;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/* Custom classes for text colors */
+.text-black {
+  color: rgb(34 211 238) !important;
+}
+
+.text-gray-700 {
+  color: rgb(255 255 255) !important;
+}
+
+/* Custom Dot Cursor */
+.cursor-none {
+  cursor: none;
+}
+
+/* Animation for section transitions */
+.fade-in {
+  animation: fadeIn 2.8s ease forwards;
+}
+
+.slide-in {
+  animation: slideIn 3s ease forwards;
+}
+
+.zoom-in {
+  animation: zoomIn 2.8s ease forwards;
+}
+
+.blur-in {
+  animation: blurIn 3s ease forwards;
+}
+
+.fade-in-delay-1 {
+  animation: fadeIn 2.8s ease forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.fade-in-delay-2 {
+  animation: fadeIn 2.8s ease forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.fade-in-delay-3 {
+  animation: fadeIn 2.8s ease forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+.scale-in-bounce {
+  animation: scaleInBounce 2.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes blurIn {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes scaleInBounce {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Back to top button animation */
+.back-to-top {
+  animation: pulseButton 2s infinite;
+}
+
+@keyframes pulseButton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Custom heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+/* Custom card styles */
+.custom-card {
+  background-color: #1f1f1f;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effects for interactive elements */
+.hover-glow {
+  transition: all 0.5s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.5);
+}
+
+.hover-scale {
+  transition: transform 0.5s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Staggered animation for lists */
+.stagger-item:nth-child(1) { animation-delay: 0.1s; }
+.stagger-item:nth-child(2) { animation-delay: 0.2s; }
+.stagger-item:nth-child(3) { animation-delay: 0.3s; }
+.stagger-item:nth-child(4) { animation-delay: 0.4s; }
+.stagger-item:nth-child(5) { animation-delay: 0.5s; }

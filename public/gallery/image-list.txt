@@ -1,0 +1,12 @@
+
+Images used in the portfolio:
+
+1. profile-image.jpg - Professional portrait photo used in the hero section
+2. project-1.jpg - E-commerce platform displayed on laptop
+3. project-2.jpg - Financial dashboard with charts and graphs
+5. project-5.jpg - Travel blog homepage on laptop
+6. project-6.jpg - Portfolio website displayed on devices
+7. vidyapeeth.jpg - Educational platform Vidyapeeth website
+8. ai-code-reviewer.jpg - AI code reviewer interface
+9. resume.pdf - Downloadable resume file
+
