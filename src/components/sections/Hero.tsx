@@ -46,7 +46,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl text-gray-300 max-w-lg fade-in-delay-2">
-              I craft beautiful digital experiences that captivate users and help businesses grow through innovative solutions.
+              I’m a front-end developer skilled in HTML, CSS, JavaScript, React, and Node.js. I build responsive, user-focused interfaces that captivate users and boost business growth through smart, innovative web solutions.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 fade-in-delay-3">
@@ -74,8 +74,8 @@ const Hero = () => {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-cyan-400 p-4 rounded-full shadow-lg text-white scale-in-bounce">
-              <span className="block text-center font-bold">8+</span>
-              <span className="text-sm">Years<br/>Experience</span>
+              <span className="block text-center font-bold">5+</span>
+              <span className="text-sm"> Projects </span>
             </div>
           </div>
         </div>
